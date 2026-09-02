@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clickdoc · Step-by-step guides that never leave your computer</title>
+<meta name="description" content="Record your clicks in Chrome, get a step-by-step guide with screenshots. Nothing is uploaded. Pay once.">
+<style>
+  :root { --primary: #d9480f; --ink: #1a1d26; --ink-2: #4b5563; --ink-3: #9ca3af; --bg: #fafaf9; --surface: #fff; --border: #e5e7eb; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--bg); line-height: 1.55; }
+  a { color: var(--primary); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+  header { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; }
+  .brand { font-weight: 700; font-size: 1.2rem; letter-spacing: -0.02em; color: var(--ink); text-decoration: none; }
+  .brand span { color: var(--primary); }
+  nav a { margin-left: 20px; color: var(--ink-2); text-decoration: none; }
+  .hero { padding: 56px 0 40px; display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: center; }
+  h1 { font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 16px; }
+  .lede { font-size: 1.15rem; color: var(--ink-2); margin: 0 0 24px; }
+  .btn { display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 8px; background: var(--primary); color: #fff; font-weight: 600; text-decoration: none; border: 1px solid var(--primary); }
+  .btn:hover { background: #c23f0b; }
+  .btn-ghost { background: transparent; color: var(--ink); border-color: var(--border); margin-left: 8px; }
+  .btn:focus-visible, a:focus-visible { outline: 3px solid rgba(217,72,15,.4); outline-offset: 2px; }
+  .shot { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; box-shadow: 0 8px 30px -16px rgba(0,0,0,.35); background: #fff; }
+  .shot img { display: block; width: 100%; height: auto; }
+  section { padding: 40px 0; border-top: 1px solid var(--border); }
+  h2 { font-size: 1.6rem; letter-spacing: -0.01em; margin: 0 0 20px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+  .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--ink-2); }
+  .price { text-align: center; }
+  .price .amt { font-size: 2.6rem; font-weight: 700; letter-spacing: -0.03em; }
+  .price small { display: block; color: var(--ink-3); font-weight: 500; font-size: 1rem; }
+  .compare { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .compare th, .compare td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border); }
+  .compare th { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--ink-3); background: var(--bg); }
+  .compare tr:last-child td { border-bottom: 0; }
+  footer { padding: 30px 0 50px; color: var(--ink-3); font-size: .9rem; }
+  @media (max-width: 820px) { .hero, .grid { grid-template-columns: 1fr; } nav { display: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="#">Click<span>doc</span></a>
+    <nav><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="privacy.html">Privacy</a></nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h1>Step-by-step guides that never leave your computer.</h1>
+      <p class="lede">Press record, do the task, press stop. Clickdoc writes a step for every click with a screenshot and a highlight on the exact element. No account, no upload, no monthly fee.</p>
+      <a class="btn" href="#install">Add to Chrome, free</a>
+      <a class="btn btn-ghost" href="demo/acme-add-employee.html">See a real guide</a>
+    </div>
+    <div class="shot"><img src="screenshots/01-guide-editor.png" alt="A Clickdoc guide showing numbered steps with screenshots and red highlight boxes"></div>
+  </div>
+
+  <section id="how">
+    <h2>How it works</h2>
+    <div class="grid">
+      <div class="card"><h3>1. Record</h3><p>Give the guide a title and press start. Do the task in any tab, on any site.</p></div>
+      <div class="card"><h3>2. Every click becomes a step</h3><p>Links, buttons, tabs, typed fields, dropdowns. Each with a screenshot and a highlight. Passwords are masked.</p></div>
+      <div class="card"><h3>3. Hand it over</h3><p>Edit the text, reorder, then download one HTML file with the pictures inside, copy Markdown, or print to PDF.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why not Scribe or Tango?</h2>
+    <table class="compare">
+      <thead><tr><th></th><th>Clickdoc</th><th>Tango / Scribe</th><th>Folge</th></tr></thead>
+      <tbody>
+        <tr><td>Where screenshots go</td><td><strong>Your computer only</strong></td><td>Their cloud</td><td>Your computer only</td></tr>
+        <tr><td>Form factor</td><td>Chrome extension</td><td>Chrome extension</td><td>Desktop app</td></tr>
+        <tr><td>Price</td><td><strong>$29 once</strong></td><td>$22 to $26 per user, per month</td><td>$89 once</td></tr>
+        <tr><td>Account required</td><td>No</td><td>Yes</td><td>No</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="grid">
+      <div class="card price"><h3>Free</h3><div class="amt">$0</div><p>3 guides. Full export. A small "made with Clickdoc" line in the footer.</p></div>
+      <div class="card price"><h3>Personal</h3><div class="amt">$29<small>one-time</small></div><p>Unlimited guides. Clean exports. Yours forever, no renewal.</p></div>
+      <div class="card price"><h3>Team</h3><div class="amt">$19<small>per seat, one-time, 5+ seats</small></div><p>Same, invoiced. Keys work offline, so it passes IT review.</p></div>
+    </div>
+  </section>
+
+  <section id="install">
+    <h2>Install</h2>
+    <p>Chrome Web Store listing pending review. Until then, <a href="https://github.com/jowjeh1/clickdoc">load the extension from the repo</a> in developer mode.</p>
+  </section>
+
+  <footer>Clickdoc records only while you are recording, stores everything locally, and does not use AI. <a href="privacy.html">Privacy policy</a>.</footer>
+</div>
+</body>
+</html>
